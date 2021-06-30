@@ -21,7 +21,8 @@ def yes_or_no(question):
         if reply[0] == 'y':
             return True
         if reply[0] == 'n':
-            return False
+            print("Thank you for visiting. Goodbye.")
+            quit()
 
 print("Welcome to the CS project Mortgage Calculator!")
 print("This program will calculate your monthly mortgage payment based off of the house principal amount and your initial downpayment")
@@ -29,7 +30,7 @@ print("*note - This monthly payment is based off of a 30 year fixed mortgage and
 
 yes_or_no("Do you wish to proceed?")
 
-if yes_or_no == True:
+if reply == True:
     print("Lets get started!")
     p = input("What is the price of the home?")
     
