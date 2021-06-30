@@ -7,7 +7,7 @@ n = 360 # number of monthly payments for a 30 year mortgage
 apt = 2500
 api = 1500
 
-def calculate_mortgage_m(p, dp):    # function calculates monthly mortgage payment
+def calculate_mortgage_m(principal, downpayment):    # function calculates monthly mortgage payment
     np = p - dp
     i = (r/100)/12 
     # M = P [ i(1 + i)^n ] / [ (1 + i)^n – 1] mortgage payment formula
@@ -28,10 +28,32 @@ print("Welcome to the CS project Mortgage Calculator!")
 print("This program will calculate your monthly mortgage payment based off of the house principal amount and your initial downpayment")
 print("*note - This monthly payment is based off of a 30 year fixed mortgage and includes the annual interest rate of 4.5%, with an annual property tax of $2500 and annual property insurance of $1550")
 
-yes_or_no("Do you wish to proceed?")
+reply = yes_or_no("Do you wish to proceed?")
 
 if reply == True:
     print("Lets get started!")
-    p = input("What is the price of the home?")
     
+# p = input("What is the price of the home?   Enter amount: ")
+try:
+  num = int(input("What is the price of the home?   Enter amount: "))
+  print("num:", num)
+except ValueError:
+    print("Please input a number")  
 
+
+
+
+try:
+  num2 = int(input("How much will your downpayment be?   Enter amount: "))
+  print("num:", num2)
+except ValueError:
+    print("Please input a number")
+
+
+
+print("Thank you!")
+print()
+
+monthly_payment = calculate_mortgage_m(num, num2)
+
+print("Your payment will be {} per month".format(monthly_payment))
