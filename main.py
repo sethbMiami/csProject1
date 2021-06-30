@@ -16,7 +16,7 @@ def calculate_mortgage_m(p, dp):    # function calculates monthly mortgage payme
 
 def yes_or_no(question):
     while "the answer is invalid":
-        reply = raw_input(question)
+        reply = input(question)
         if reply[0] == 'y':
             return True
         if reply[0] == 'n':
@@ -55,4 +55,3 @@ print()
 monthly_payment_true = calculate_mortgage_m(num, num2)
 
 print("Your payment will be {} per month".format(monthly_payment_true))
-
