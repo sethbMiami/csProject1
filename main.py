@@ -23,7 +23,6 @@ def yes_or_no(question):
             print("Thank you for visiting. Goodbye.")
             quit()
 
-
 print("Welcome to the CS project Mortgage Calculator!")
 print("This program will calculate your monthly mortgage payment based off of the house principal amount and your initial downpayment")
 print("*note - This monthly payment is based off of a 30 year fixed mortgage and includes the annual interest rate of 4.5%, with an annual property tax of $2500 and annual property insurance of $1550")
@@ -33,25 +32,11 @@ reply_true = yes_or_no("Do you wish to proceed?")
 if reply_true:
     print("Lets get started!")
     
-# p = input("What is the price of the home?   Enter amount: ")
-
-
-
-
 num = int(input("What is the price of the home?   Enter amount: "))
-
-
-
-
-
 num2 = int(input("How much will your downpayment be?   Enter amount: "))
-
-
-
 
 print("Thank you!")
 print()
-
 monthly_payment_true = calculate_mortgage_m(num, num2)
 
 print("Your payment will be {} per month".format(monthly_payment_true))
