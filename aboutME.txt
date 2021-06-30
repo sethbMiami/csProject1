@@ -1,0 +1,36 @@
+This is the first python project from Codecademy. I am going to create a mortgage calculator that will take the price of the house you are looking at and calculate monthly payments. 
+
+Again, I have no idea what I'm doing.
+
+Outline of program:
+
+Intro:
+
+Display text welcoming user to CS Mortgage Calculator
+Ask user to input the price of the home they want to buy.
+Ask user for amount of downpayment if any
+Fixed 30 year mortgage 
+Annual interest rate fixed at 4.5%
+Annual Property tax = $2500
+Annual Property insurance = $1500
+
+Program:
+
+Example - If one borrows $250,000 at a 7% annual interest rate and pays the loan back over thirty years, with $3,000 annual property tax payment, $1,500 annual property insurance cost and 0.5% annual private mortgage insurance payment, what will the monthly payment be? The answer is $2,142.42.
+
+Formula calculates:
+P = principal amount   user input 
+DP = downpayment       user input 
+R = interest rate 4.5 / 100 / 12 
+N = monthly payments 30 * 12 = 360
+
+
+
+M = P [ i(1 + i)^n ] / [ (1 + i)^n – 1]
+
+
+Conclusion:
+
+Print statement telling the user how much their monthly payment will be 
+
+Ask if they would like to check another house payment - if yes start over.
