@@ -1,6 +1,5 @@
 This is the first python project from Codecademy. I am going to create a mortgage calculator that will take the price of the house you are looking at and calculate monthly payments. 
 
-Again, I have no idea what I'm doing.
 
 Outline of program:
 
